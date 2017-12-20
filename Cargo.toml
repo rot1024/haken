@@ -1,0 +1,6 @@
+[package]
+name = "haken"
+version = "0.1.0"
+authors = ["rot1024 <aayhrot@gmail.com>"]
+
+[dependencies]
