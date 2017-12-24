@@ -6,3 +6,8 @@ description = "anime selector"
 
 [dependencies]
 clap = {version = "2.29.0", features = ["yaml"]}
+hyper = "0.11.9"
+hyper-tls = "0.1.2"
+select = "0.4.2"
+tokio-core = "0.1.11"
+futures = "0.1.17"
