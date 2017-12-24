@@ -1,0 +1,32 @@
+name: haken
+args:
+    - source:
+        short: s
+        value_name: SOURCE
+        help: Sets the data source
+        takes_value: true
+        default_value: animemo
+        possible_values:
+            - animemo
+    - formatter:
+        short: f
+        value_name: FORMATTER
+        help: Sets the formatter
+        takes_value: true
+        default_value: simple
+        possible_values:
+            - simple
+    # - YEAR:
+    #     help: Sets the year of anime you want to select such as "2018"
+    #     index: 1
+    #     required: true
+    #     requires: SEASON
+    - SEASON:
+        help: Sets the season of anime you want to select
+        possible_values:
+            - winter
+            - spring
+            - summer
+            - autumn
+        required: true
+        index: 2

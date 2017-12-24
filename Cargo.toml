@@ -5,3 +5,4 @@ authors = ["rot1024 <aayhrot@gmail.com>"]
 description = "anime selector"
 
 [dependencies]
+clap = {version = "2.29.0", features = ["yaml"]}
