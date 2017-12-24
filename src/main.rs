@@ -1,7 +1,6 @@
 extern crate haken;
 
-use haken::models;
+mod model;
 
 fn main() {
-    models::hello();
 }
