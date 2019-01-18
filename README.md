@@ -21,7 +21,7 @@ haken ("覇権") - Anime selector and recording rule registerer
 Install haken:
 
 ```
-curl -L https://github.com/rot1024/haken/releases/download/v0.1.0/haken_`uname -s`_`uname -m` > /usr/local/bin/haken && chmod +x /usr/local/bin/haken
+curl -L https://github.com/rot1024/haken/releases/download/v0.1.0/haken_0.1.0_`uname -s`_`uname -m` > /usr/local/bin/haken && chmod +x /usr/local/bin/haken
 ```
 
 Put a config file in `$HOME/.config/haken`, `$HOME/.haken`, `/etc/haken`, or working directory. YAML(`config.yml`), JSON(`config.json`), and TOML(`config.toml`) are supported.
