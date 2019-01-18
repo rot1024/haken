@@ -12,7 +12,8 @@ script:
   - go test -v ./...
 after_success: |
   if [ ! -z "$TRAVIS_TAG" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-    go get -u github.com/goreleaser/goreleaser && goreleaser
+    curl -sL https://github.com/goreleaser/goreleaser/releases/download/v0.97.0/goreleaser_Linux_arm64.tar.gz | tar zx -C /usr/lcoal/bin goreleaser
+    goreleaser
   fi
 notifications:
   email:
