@@ -4,7 +4,7 @@ haken ("覇権") - Anime selector and recording rule registerer
 
 <p align="center"><img src="https://raw.githubusercontent.com/rot1024/haken/master/doc/screenshot.png" width="600" /></p>
 
-## Supported Applciation
+## Supported Application
 
 ### Provider
 
