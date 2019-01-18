@@ -1,10 +1,19 @@
 builds:
 - env:
   - CGO_ENABLED=0
+  goos:
+    - windows
+    - darwin
+    - linux
+  goarch:
+    - amd64
+    - 386
 checksum:
   name_template: 'checksums.txt'
 snapshot:
   name_template: "{{ .Tag }}-next"
+archive:
+  format: binary
 changelog:
   sort: asc
   filters:
