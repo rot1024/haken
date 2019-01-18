@@ -1,0 +1,21 @@
+language: go
+go:
+  - 1.11.x
+env:
+  - GO111MODULE=on
+cache:
+  directories:
+     - $HOME/gopath/pkg/mod
+install:
+  - go mod download
+script:
+  - go test -v ./...
+after_success:
+  if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
+      [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    go get -u github.com/goreleaser/goreleaser && goreleaser
+  fi
+notifications:
+  email:
+    on_success: never
+    on_failure: never
