@@ -10,7 +10,7 @@ install:
   - go mod download
 script:
   - go test -v ./...
-after_success:
+after_success: |
   if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
       [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     go get -u github.com/goreleaser/goreleaser && goreleaser
